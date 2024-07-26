@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 
 export default function BlogContent({news, itemIndex}) {
   return (
-    <div className='w-[30%] hover:border border-[white] cursor-pointer rounded-2xl bg-[#ffffff2f] overflow-hidden'>
+    <div className='lg:w-[30%] hover:border border-[white] cursor-pointer rounded-2xl bg-[#ffffff2f] overflow-hidden my-5 '>
         <img src={news.imgUrl} className=' h-[300px] w-full' alt="" />
-        <div className='px-3 py-3 pb-3 text-white flex flex-col justify-between h-[300px]'>
+        <div className='px-3 py-3 pb-3 text-white flex flex-col  justify-between min-h-[300px]'>
             <h1 className='text-2xl font-bold'>{news.title.substring(1, 50)}......</h1>
             <p>{news.content}..... 
                 <Link to={`/${itemIndex}/Blog`}>
